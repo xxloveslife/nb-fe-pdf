@@ -1,6 +1,6 @@
 {
     "name": "nb-fe-pdf",
-    "version": "1.1.11",
+    "version": "1.1.12",
     "description": "print pdf 算法逻辑,基于原生js,web h5 vue react 都可以调用",
     "main": "./lib/index.js",
     "directories": {
