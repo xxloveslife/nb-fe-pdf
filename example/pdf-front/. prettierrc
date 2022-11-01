@@ -1,0 +1,9 @@
+{
+  "prettier/prettier": [
+    "warn",
+    {
+      "singleQuote": true,
+      "parser": "flow"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+@media print {
+  @page {
+    margin: 0;
+    size: A4;
+  }
+  .print-hide {
+    display: none;
+  }
+}
+.page-splite-flag,
+.card-table-top-wraper,
+.card-table-wraper,
+.card-table-bom-wraper {
+  /* border: 1px solid transparent; */
+  border-left: none;
+  border-right: none;
+}
+.print-page-wraper {
+  width: 794px;
+  height: 1123px;
+  page-break-after: always;
+  /* padding: 15px 25px; */
+  /* page-break-after: always; */
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.print-img-wraper {
+  page-break-after: always;
+  /* width: 794px;
+  height: 1123px; */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.print-last-wraper {
+  page-break-after: avoid;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 794px;
+  height: 1123px;
+  padding: 0 26px 0 26px;
+}
+.print-img-wraper,
+.print-page-wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.print-img-wraper .print-main-name,
+.print-page-wraper .print-main-name {
+  box-sizing: border-box;
+  padding: 0 26px 0 26px;
+}
+.print-img-wraper .print-header-name,
+.print-page-wraper .print-header-name,
+.print-img-wraper .print-main-name,
+.print-page-wraper .print-main-name,
+.print-img-wraper .print-footer-name,
+.print-page-wraper .print-footer-name {
+  width: 100%;
+}

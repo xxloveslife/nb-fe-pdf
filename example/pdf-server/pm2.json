@@ -1,0 +1,27 @@
+{
+    "apps": [
+      {
+        "name": "amcPdfServer",
+        "script": "./src/index.js",
+        "instances": 2,
+        "cwd": ".",
+        "autorestart": true,
+        "merge_logs": true,
+        "watch": "./src",
+        "max_restarts": 5,
+        "max_memory_restart": "2G",
+        "instance_var": "INSTANCE_ID",
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "env_production": {
+          "NODE_ENV": "production"
+        },
+        "out_file": "./logs/app.log",
+        "error_file": "./logs/error.log",
+        "log_date_format": "YYYY-MM-DD HH:mm Z",
+        "exec_mode": "cluster"
+      }
+    ]
+  }
+  
